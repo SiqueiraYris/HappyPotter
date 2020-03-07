@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		4DA79AFF241455800021B4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79AFE241455800021B4A9 /* AppDelegate.swift */; };
 		4DA79B01241455800021B4A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79B00241455800021B4A9 /* SceneDelegate.swift */; };
-		4DA79B03241455800021B4A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79B02241455800021B4A9 /* ViewController.swift */; };
-		4DA79B06241455800021B4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA79B04241455800021B4A9 /* Main.storyboard */; };
 		4DA79B08241455840021B4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA79B07241455840021B4A9 /* Assets.xcassets */; };
 		4DA79B0B241455840021B4A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA79B09241455840021B4A9 /* LaunchScreen.storyboard */; };
 		4DA79B16241455840021B4A9 /* HappyPotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79B15241455840021B4A9 /* HappyPotterTests.swift */; };
 		4DA79B21241455840021B4A9 /* HappyPotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79B20241455840021B4A9 /* HappyPotterUITests.swift */; };
 		4DA79B31241456870021B4A9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79B30241456870021B4A9 /* Coordinator.swift */; };
+		4DB449182414578F00C95A0E /* HousesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB449072414578F00C95A0E /* HousesViewController.xib */; };
+		4DB449192414578F00C95A0E /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449082414578F00C95A0E /* HousesViewController.swift */; };
+		4DB4491A2414578F00C95A0E /* HousesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449092414578F00C95A0E /* HousesViewModel.swift */; };
+		4DB4491B2414578F00C95A0E /* HousesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4490A2414578F00C95A0E /* HousesCoordinator.swift */; };
+		4DB4491C2414578F00C95A0E /* SpellsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4490C2414578F00C95A0E /* SpellsCoordinator.swift */; };
+		4DB4491D2414578F00C95A0E /* SpellsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4490D2414578F00C95A0E /* SpellsViewModel.swift */; };
+		4DB4491E2414578F00C95A0E /* SpellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4490E2414578F00C95A0E /* SpellsViewController.xib */; };
+		4DB4491F2414578F00C95A0E /* SpellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4490F2414578F00C95A0E /* SpellsViewController.swift */; };
+		4DB449202414578F00C95A0E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449112414578F00C95A0E /* ApplicationCoordinator.swift */; };
+		4DB449212414578F00C95A0E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449122414578F00C95A0E /* TabBarCoordinator.swift */; };
+		4DB449222414578F00C95A0E /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449142414578F00C95A0E /* CharactersViewModel.swift */; };
+		4DB449232414578F00C95A0E /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449152414578F00C95A0E /* CharactersCoordinator.swift */; };
+		4DB449242414578F00C95A0E /* CharactersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB449162414578F00C95A0E /* CharactersViewController.xib */; };
+		4DB449252414578F00C95A0E /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449172414578F00C95A0E /* CharactersViewController.swift */; };
+		4DB4492A2414593D00C95A0E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449272414593D00C95A0E /* Character.swift */; };
+		4DB4492B2414593D00C95A0E /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449282414593D00C95A0E /* House.swift */; };
+		4DB4492C2414593D00C95A0E /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449292414593D00C95A0E /* Spell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +54,6 @@
 		4DA79AFB241455800021B4A9 /* HappyPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA79AFE241455800021B4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA79B00241455800021B4A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4DA79B02241455800021B4A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4DA79B05241455800021B4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DA79B07241455840021B4A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA79B0A241455840021B4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA79B0C241455840021B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +64,23 @@
 		4DA79B20241455840021B4A9 /* HappyPotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyPotterUITests.swift; sourceTree = "<group>"; };
 		4DA79B22241455840021B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA79B30241456870021B4A9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4DB449072414578F00C95A0E /* HousesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesViewController.xib; sourceTree = "<group>"; };
+		4DB449082414578F00C95A0E /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
+		4DB449092414578F00C95A0E /* HousesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewModel.swift; sourceTree = "<group>"; };
+		4DB4490A2414578F00C95A0E /* HousesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesCoordinator.swift; sourceTree = "<group>"; };
+		4DB4490C2414578F00C95A0E /* SpellsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellsCoordinator.swift; sourceTree = "<group>"; };
+		4DB4490D2414578F00C95A0E /* SpellsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellsViewModel.swift; sourceTree = "<group>"; };
+		4DB4490E2414578F00C95A0E /* SpellsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellsViewController.xib; sourceTree = "<group>"; };
+		4DB4490F2414578F00C95A0E /* SpellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellsViewController.swift; sourceTree = "<group>"; };
+		4DB449112414578F00C95A0E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		4DB449122414578F00C95A0E /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		4DB449142414578F00C95A0E /* CharactersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		4DB449152414578F00C95A0E /* CharactersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
+		4DB449162414578F00C95A0E /* CharactersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharactersViewController.xib; sourceTree = "<group>"; };
+		4DB449172414578F00C95A0E /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		4DB449272414593D00C95A0E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		4DB449282414593D00C95A0E /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		4DB449292414593D00C95A0E /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +133,9 @@
 			children = (
 				4DA79B2E241456630021B4A9 /* Application */,
 				4DA79B09241455840021B4A9 /* LaunchScreen.storyboard */,
-				4DA79B04241455800021B4A9 /* Main.storyboard */,
+				4DB449262414593D00C95A0E /* Models */,
 				4DA79B2F241456720021B4A9 /* Resources */,
-				4DA79B02241455800021B4A9 /* ViewController.swift */,
+				4DB449052414578F00C95A0E /* Scenes */,
 			);
 			path = HappyPotter;
 			sourceTree = "<group>";
@@ -131,10 +161,10 @@
 		4DA79B2E241456630021B4A9 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				4DA79B30241456870021B4A9 /* Coordinator.swift */,
 				4DA79AFE241455800021B4A9 /* AppDelegate.swift */,
-				4DA79B00241455800021B4A9 /* SceneDelegate.swift */,
+				4DA79B30241456870021B4A9 /* Coordinator.swift */,
 				4DA79B0C241455840021B4A9 /* Info.plist */,
+				4DA79B00241455800021B4A9 /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -145,6 +175,69 @@
 				4DA79B07241455840021B4A9 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4DB449052414578F00C95A0E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4DB449102414578F00C95A0E /* Application */,
+				4DB449132414578F00C95A0E /* Characters */,
+				4DB449062414578F00C95A0E /* Houses */,
+				4DB4490B2414578F00C95A0E /* Spells */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4DB449062414578F00C95A0E /* Houses */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4490A2414578F00C95A0E /* HousesCoordinator.swift */,
+				4DB449082414578F00C95A0E /* HousesViewController.swift */,
+				4DB449072414578F00C95A0E /* HousesViewController.xib */,
+				4DB449092414578F00C95A0E /* HousesViewModel.swift */,
+			);
+			path = Houses;
+			sourceTree = "<group>";
+		};
+		4DB4490B2414578F00C95A0E /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4490C2414578F00C95A0E /* SpellsCoordinator.swift */,
+				4DB4490F2414578F00C95A0E /* SpellsViewController.swift */,
+				4DB4490E2414578F00C95A0E /* SpellsViewController.xib */,
+				4DB4490D2414578F00C95A0E /* SpellsViewModel.swift */,
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
+		4DB449102414578F00C95A0E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4DB449112414578F00C95A0E /* ApplicationCoordinator.swift */,
+				4DB449122414578F00C95A0E /* TabBarCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4DB449132414578F00C95A0E /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				4DB449152414578F00C95A0E /* CharactersCoordinator.swift */,
+				4DB449172414578F00C95A0E /* CharactersViewController.swift */,
+				4DB449162414578F00C95A0E /* CharactersViewController.xib */,
+				4DB449142414578F00C95A0E /* CharactersViewModel.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		4DB449262414593D00C95A0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DB449272414593D00C95A0E /* Character.swift */,
+				4DB449282414593D00C95A0E /* House.swift */,
+				4DB449292414593D00C95A0E /* Spell.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +344,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB449242414578F00C95A0E /* CharactersViewController.xib in Resources */,
 				4DA79B0B241455840021B4A9 /* LaunchScreen.storyboard in Resources */,
 				4DA79B08241455840021B4A9 /* Assets.xcassets in Resources */,
-				4DA79B06241455800021B4A9 /* Main.storyboard in Resources */,
+				4DB4491E2414578F00C95A0E /* SpellsViewController.xib in Resources */,
+				4DB449182414578F00C95A0E /* HousesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +373,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB449192414578F00C95A0E /* HousesViewController.swift in Sources */,
+				4DB4491D2414578F00C95A0E /* SpellsViewModel.swift in Sources */,
+				4DB449212414578F00C95A0E /* TabBarCoordinator.swift in Sources */,
+				4DB4491C2414578F00C95A0E /* SpellsCoordinator.swift in Sources */,
+				4DB4491B2414578F00C95A0E /* HousesCoordinator.swift in Sources */,
+				4DB449222414578F00C95A0E /* CharactersViewModel.swift in Sources */,
+				4DB449232414578F00C95A0E /* CharactersCoordinator.swift in Sources */,
 				4DA79B31241456870021B4A9 /* Coordinator.swift in Sources */,
-				4DA79B03241455800021B4A9 /* ViewController.swift in Sources */,
+				4DB449252414578F00C95A0E /* CharactersViewController.swift in Sources */,
+				4DB4491A2414578F00C95A0E /* HousesViewModel.swift in Sources */,
+				4DB4492B2414593D00C95A0E /* House.swift in Sources */,
+				4DB4491F2414578F00C95A0E /* SpellsViewController.swift in Sources */,
 				4DA79AFF241455800021B4A9 /* AppDelegate.swift in Sources */,
+				4DB4492C2414593D00C95A0E /* Spell.swift in Sources */,
+				4DB4492A2414593D00C95A0E /* Character.swift in Sources */,
 				4DA79B01241455800021B4A9 /* SceneDelegate.swift in Sources */,
+				4DB449202414578F00C95A0E /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4DA79B04241455800021B4A9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DA79B05241455800021B4A9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4DA79B09241455840021B4A9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
