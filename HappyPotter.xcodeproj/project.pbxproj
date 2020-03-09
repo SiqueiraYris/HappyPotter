@@ -31,6 +31,15 @@
 		4DB4492A2414593D00C95A0E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449272414593D00C95A0E /* Character.swift */; };
 		4DB4492B2414593D00C95A0E /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449282414593D00C95A0E /* House.swift */; };
 		4DB4492C2414593D00C95A0E /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB449292414593D00C95A0E /* Spell.swift */; };
+		4DB4492F241460BE00C95A0E /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4492E241460BE00C95A0E /* RequestConfiguration.swift */; };
+		4DCEA47E24167622002F1184 /* NetworkRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA47D24167622002F1184 /* NetworkRoute.swift */; };
+		4DCEA48024167630002F1184 /* HousesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA47F24167630002F1184 /* HousesRoute.swift */; };
+		4DCEA4822416786A002F1184 /* HousesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA4812416786A002F1184 /* HousesService.swift */; };
+		4DCEA484241678CC002F1184 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA483241678CC002F1184 /* NetworkManagerProtocol.swift */; };
+		4DCEA486241678E7002F1184 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA485241678E7002F1184 /* NetworkManager.swift */; };
+		4DCEA48924167AD6002F1184 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48824167AD6002F1184 /* Data+Extension.swift */; };
+		4DCEA48B241689A1002F1184 /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */; };
+		4DCEA48F2416A83F002F1184 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48E2416A83F002F1184 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +90,15 @@
 		4DB449272414593D00C95A0E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		4DB449282414593D00C95A0E /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		4DB449292414593D00C95A0E /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		4DB4492E241460BE00C95A0E /* RequestConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
+		4DCEA47D24167622002F1184 /* NetworkRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRoute.swift; sourceTree = "<group>"; };
+		4DCEA47F24167630002F1184 /* HousesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesRoute.swift; sourceTree = "<group>"; };
+		4DCEA4812416786A002F1184 /* HousesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesService.swift; sourceTree = "<group>"; };
+		4DCEA483241678CC002F1184 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		4DCEA485241678E7002F1184 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4DCEA48824167AD6002F1184 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
+		4DCEA48E2416A83F002F1184 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +150,10 @@
 			isa = PBXGroup;
 			children = (
 				4DA79B2E241456630021B4A9 /* Application */,
+				4DCEA48724167AC5002F1184 /* Extensions */,
 				4DA79B09241455840021B4A9 /* LaunchScreen.storyboard */,
 				4DB449262414593D00C95A0E /* Models */,
+				4DB4492D241460BE00C95A0E /* Network */,
 				4DA79B2F241456720021B4A9 /* Resources */,
 				4DB449052414578F00C95A0E /* Scenes */,
 			);
@@ -195,6 +215,7 @@
 				4DB449082414578F00C95A0E /* HousesViewController.swift */,
 				4DB449072414578F00C95A0E /* HousesViewController.xib */,
 				4DB449092414578F00C95A0E /* HousesViewModel.swift */,
+				4DCEA4812416786A002F1184 /* HousesService.swift */,
 			);
 			path = Houses;
 			sourceTree = "<group>";
@@ -238,6 +259,36 @@
 				4DB449292414593D00C95A0E /* Spell.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4DB4492D241460BE00C95A0E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEA48E2416A83F002F1184 /* NetworkError.swift */,
+				4DCEA485241678E7002F1184 /* NetworkManager.swift */,
+				4DCEA483241678CC002F1184 /* NetworkManagerProtocol.swift */,
+				4DCEA47D24167622002F1184 /* NetworkRoute.swift */,
+				4DB4492E241460BE00C95A0E /* RequestConfiguration.swift */,
+				4DCEA47C24167607002F1184 /* Routes */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4DCEA47C24167607002F1184 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEA47F24167630002F1184 /* HousesRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		4DCEA48724167AC5002F1184 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DCEA48824167AD6002F1184 /* Data+Extension.swift */,
+				4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,21 +424,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCEA486241678E7002F1184 /* NetworkManager.swift in Sources */,
+				4DCEA484241678CC002F1184 /* NetworkManagerProtocol.swift in Sources */,
 				4DB449192414578F00C95A0E /* HousesViewController.swift in Sources */,
 				4DB4491D2414578F00C95A0E /* SpellsViewModel.swift in Sources */,
 				4DB449212414578F00C95A0E /* TabBarCoordinator.swift in Sources */,
+				4DCEA48B241689A1002F1184 /* URLComponents+Extension.swift in Sources */,
 				4DB4491C2414578F00C95A0E /* SpellsCoordinator.swift in Sources */,
 				4DB4491B2414578F00C95A0E /* HousesCoordinator.swift in Sources */,
 				4DB449222414578F00C95A0E /* CharactersViewModel.swift in Sources */,
 				4DB449232414578F00C95A0E /* CharactersCoordinator.swift in Sources */,
 				4DA79B31241456870021B4A9 /* Coordinator.swift in Sources */,
+				4DCEA47E24167622002F1184 /* NetworkRoute.swift in Sources */,
 				4DB449252414578F00C95A0E /* CharactersViewController.swift in Sources */,
+				4DCEA48024167630002F1184 /* HousesRoute.swift in Sources */,
 				4DB4491A2414578F00C95A0E /* HousesViewModel.swift in Sources */,
 				4DB4492B2414593D00C95A0E /* House.swift in Sources */,
 				4DB4491F2414578F00C95A0E /* SpellsViewController.swift in Sources */,
+				4DB4492F241460BE00C95A0E /* RequestConfiguration.swift in Sources */,
+				4DCEA48924167AD6002F1184 /* Data+Extension.swift in Sources */,
 				4DA79AFF241455800021B4A9 /* AppDelegate.swift in Sources */,
 				4DB4492C2414593D00C95A0E /* Spell.swift in Sources */,
 				4DB4492A2414593D00C95A0E /* Character.swift in Sources */,
+				4DCEA4822416786A002F1184 /* HousesService.swift in Sources */,
+				4DCEA48F2416A83F002F1184 /* NetworkError.swift in Sources */,
 				4DA79B01241455800021B4A9 /* SceneDelegate.swift in Sources */,
 				4DB449202414578F00C95A0E /* ApplicationCoordinator.swift in Sources */,
 			);

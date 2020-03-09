@@ -13,7 +13,7 @@ struct House: Codable {
     // MARK: - Attributes
     let id, name, mascot, headOfHouse: String
     let houseGhost, founder: String
-    let school: String
+    let school: String?
     let members, values, colors: [String]
 
     // MARK: - CodingKeys
