@@ -9,22 +9,19 @@
 import UIKit
 
 final class HousesCoordinator: Coordinator {
-
     // MARK: - Attributes
     var rootViewController: UINavigationController
 
-    // MARK: - Life Cycle
+    // MARK: - Initializer
     init() {
         rootViewController = UINavigationController()
     }
 
+    // MARK: - Life Cycle
     func start() {
-        let viewController = HousesViewController()
+        let viewModel = HousesViewModel(coordinator: self)
+        let viewController = HousesViewController(with: viewModel)
         rootViewController.pushViewController(viewController, animated: true)
-//        let viewModel = MoviesViewModel(coordinator: self)
-//        let viewController = MoviesViewController(viewModel: viewModel)
-//        navigationController?.pushViewController(viewController, animated: true)
     }
-
 }
     
