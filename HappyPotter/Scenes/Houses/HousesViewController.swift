@@ -15,7 +15,9 @@ final class HousesViewController: UIViewController {
     // MARK: - Initializer
     init(with viewModel: HousesViewModelProtocol) {
         self.viewModel = viewModel
+
         super.init(nibName: String(describing: HousesViewController.self), bundle: .main)
+//        super.init(nibName: nil, bundle: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {

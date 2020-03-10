@@ -9,19 +9,18 @@
 import UIKit
 
 final class SpellsCoordinator: Coordinator {
-
     // MARK: - Attributes
     var rootViewController: UINavigationController
 
-    // MARK: - Life Cycle
+    // MARK: - Initializer
     init() {
         rootViewController = UINavigationController()
     }
 
+    // MARK: - Life Cycle
     func start() {
-        // TODO: start with view model
-        let viewController = SpellsViewController()
+        let viewModel = SpellsViewModel(coordinator: self)
+        let viewController = SpellsViewController(with: viewModel)
         rootViewController.pushViewController(viewController, animated: true)
     }
-
 }

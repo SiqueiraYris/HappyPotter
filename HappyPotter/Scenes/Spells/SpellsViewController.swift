@@ -8,23 +8,26 @@
 
 import UIKit
 
-class SpellsViewController: UIViewController {
+final class SpellsViewController: UIViewController {
+    // MARK: - Attributes
+    private let viewModel: SpellsViewModelProtocol
 
+    // MARK: - Initializer
+    init(with viewModel: SpellsViewModelProtocol) {
+        self.viewModel = viewModel
+
+        super.init(nibName: String(describing: SpellsViewController.self), bundle: .main)
+//        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewModel.fetchSpells()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
