@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4D6721D62417DFAF0000B0B8 /* SpellsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721D52417DFAF0000B0B8 /* SpellsRoute.swift */; };
 		4D6721D82417DFF30000B0B8 /* SpellsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721D72417DFF30000B0B8 /* SpellsService.swift */; };
+		4D6721DC2417E4660000B0B8 /* SpellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721DA2417E4660000B0B8 /* SpellTableViewCell.swift */; };
+		4D6721DD2417E4660000B0B8 /* SpellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6721DB2417E4660000B0B8 /* SpellTableViewCell.xib */; };
+		4D6721E12417E5BB0000B0B8 /* SpellCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721E02417E5BB0000B0B8 /* SpellCellViewModel.swift */; };
+		4D6721E42417E7720000B0B8 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721E32417E7720000B0B8 /* Dynamic.swift */; };
+		4D6721E62417FE530000B0B8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721E52417FE530000B0B8 /* UITableViewCell+Extension.swift */; };
+		4D6721E82417FFAD0000B0B8 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721E72417FFAD0000B0B8 /* ViewConfiguration.swift */; };
 		4DA79AFF241455800021B4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79AFE241455800021B4A9 /* AppDelegate.swift */; };
 		4DA79B01241455800021B4A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79B00241455800021B4A9 /* SceneDelegate.swift */; };
 		4DA79B08241455840021B4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA79B07241455840021B4A9 /* Assets.xcassets */; };
@@ -64,6 +70,12 @@
 /* Begin PBXFileReference section */
 		4D6721D52417DFAF0000B0B8 /* SpellsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsRoute.swift; sourceTree = "<group>"; };
 		4D6721D72417DFF30000B0B8 /* SpellsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsService.swift; sourceTree = "<group>"; };
+		4D6721DA2417E4660000B0B8 /* SpellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellTableViewCell.swift; sourceTree = "<group>"; };
+		4D6721DB2417E4660000B0B8 /* SpellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellTableViewCell.xib; sourceTree = "<group>"; };
+		4D6721E02417E5BB0000B0B8 /* SpellCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCellViewModel.swift; sourceTree = "<group>"; };
+		4D6721E32417E7720000B0B8 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		4D6721E52417FE530000B0B8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		4D6721E72417FFAD0000B0B8 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		4DA79AFB241455800021B4A9 /* HappyPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA79AFE241455800021B4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA79B00241455800021B4A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +142,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D6721D92417E4460000B0B8 /* SpellCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D6721DA2417E4660000B0B8 /* SpellTableViewCell.swift */,
+				4D6721DB2417E4660000B0B8 /* SpellTableViewCell.xib */,
+				4D6721E02417E5BB0000B0B8 /* SpellCellViewModel.swift */,
+			);
+			path = SpellCell;
+			sourceTree = "<group>";
+		};
+		4D6721E22417E7650000B0B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4D6721E32417E7720000B0B8 /* Dynamic.swift */,
+				4D6721E72417FFAD0000B0B8 /* ViewConfiguration.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4DA79AF2241455800021B4A9 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +191,7 @@
 				4DB4492D241460BE00C95A0E /* Network */,
 				4DA79B2F241456720021B4A9 /* Resources */,
 				4DB449052414578F00C95A0E /* Scenes */,
+				4D6721E22417E7650000B0B8 /* Utils */,
 			);
 			path = HappyPotter;
 			sourceTree = "<group>";
@@ -227,6 +259,7 @@
 		4DB4490B2414578F00C95A0E /* Spells */ = {
 			isa = PBXGroup;
 			children = (
+				4D6721D92417E4460000B0B8 /* SpellCell */,
 				4DB4490C2414578F00C95A0E /* SpellsCoordinator.swift */,
 				4D6721D72417DFF30000B0B8 /* SpellsService.swift */,
 				4DB4490F2414578F00C95A0E /* SpellsViewController.swift */,
@@ -292,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				4DCEA48824167AD6002F1184 /* Data+Extension.swift */,
+				4D6721E52417FE530000B0B8 /* UITableViewCell+Extension.swift */,
 				4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */,
 			);
 			path = Extensions;
@@ -403,6 +437,7 @@
 			files = (
 				4DB449242414578F00C95A0E /* CharactersViewController.xib in Resources */,
 				4DA79B0B241455840021B4A9 /* LaunchScreen.storyboard in Resources */,
+				4D6721DD2417E4660000B0B8 /* SpellTableViewCell.xib in Resources */,
 				4DA79B08241455840021B4A9 /* Assets.xcassets in Resources */,
 				4DB4491E2414578F00C95A0E /* SpellsViewController.xib in Resources */,
 				4DB449182414578F00C95A0E /* HousesViewController.xib in Resources */,
@@ -433,12 +468,15 @@
 				4DCEA486241678E7002F1184 /* NetworkManager.swift in Sources */,
 				4DCEA484241678CC002F1184 /* NetworkManagerProtocol.swift in Sources */,
 				4DB449192414578F00C95A0E /* HousesViewController.swift in Sources */,
+				4D6721E62417FE530000B0B8 /* UITableViewCell+Extension.swift in Sources */,
 				4DB4491D2414578F00C95A0E /* SpellsViewModel.swift in Sources */,
 				4DB449212414578F00C95A0E /* TabBarCoordinator.swift in Sources */,
 				4DCEA48B241689A1002F1184 /* URLComponents+Extension.swift in Sources */,
+				4D6721DC2417E4660000B0B8 /* SpellTableViewCell.swift in Sources */,
 				4D6721D62417DFAF0000B0B8 /* SpellsRoute.swift in Sources */,
 				4DB4491C2414578F00C95A0E /* SpellsCoordinator.swift in Sources */,
 				4DB4491B2414578F00C95A0E /* HousesCoordinator.swift in Sources */,
+				4D6721E42417E7720000B0B8 /* Dynamic.swift in Sources */,
 				4DB449222414578F00C95A0E /* CharactersViewModel.swift in Sources */,
 				4DB449232414578F00C95A0E /* CharactersCoordinator.swift in Sources */,
 				4DA79B31241456870021B4A9 /* Coordinator.swift in Sources */,
@@ -447,6 +485,8 @@
 				4DCEA48024167630002F1184 /* HousesRoute.swift in Sources */,
 				4DB4491A2414578F00C95A0E /* HousesViewModel.swift in Sources */,
 				4DB4492B2414593D00C95A0E /* House.swift in Sources */,
+				4D6721E12417E5BB0000B0B8 /* SpellCellViewModel.swift in Sources */,
+				4D6721E82417FFAD0000B0B8 /* ViewConfiguration.swift in Sources */,
 				4DB4491F2414578F00C95A0E /* SpellsViewController.swift in Sources */,
 				4D6721D82417DFF30000B0B8 /* SpellsService.swift in Sources */,
 				4DB4492F241460BE00C95A0E /* RequestConfiguration.swift in Sources */,
