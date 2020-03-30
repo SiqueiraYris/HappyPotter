@@ -9,39 +9,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="KGk-i7-Jjw" customClass="SpellTableViewCell" customModule="HappyPotter" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="365" height="99"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="HouseTableViewCell" customModule="HappyPotter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="365" height="99"/>
+                <rect key="frame" x="0.0" y="0.0" width="508" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-Zm-MCG">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9A-Rc-FDo">
                         <rect key="frame" x="15" y="15" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQO-Gn-d78">
-                        <rect key="frame" x="15" y="51" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN9-X6-ars">
+                        <rect key="frame" x="15" y="46" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="NGe-Zm-MCG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ABM-tJ-adn"/>
-                    <constraint firstItem="mQO-Gn-d78" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KfX-xu-Je1"/>
-                    <constraint firstItem="NGe-Zm-MCG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="YmV-jM-Pki"/>
-                    <constraint firstItem="mQO-Gn-d78" firstAttribute="top" secondItem="NGe-Zm-MCG" secondAttribute="bottom" constant="15" id="kz3-1S-XW1"/>
+                    <constraint firstItem="NN9-X6-ars" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="JRv-8x-KmV"/>
+                    <constraint firstItem="NN9-X6-ars" firstAttribute="top" secondItem="M9A-Rc-FDo" secondAttribute="bottom" constant="10" id="Of5-S7-A9h"/>
+                    <constraint firstItem="M9A-Rc-FDo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="pzS-Dv-sWn"/>
+                    <constraint firstItem="M9A-Rc-FDo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="z0l-Id-bqG"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="spellName" destination="NGe-Zm-MCG" id="ptw-5R-ldd"/>
-                <outlet property="spellType" destination="mQO-Gn-d78" id="kDL-TF-eTI"/>
+                <outlet property="houseHead" destination="NN9-X6-ars" id="QzA-g1-qAU"/>
+                <outlet property="houseName" destination="M9A-Rc-FDo" id="Ndv-rP-3YC"/>
             </connections>
-            <point key="canvasLocation" x="164.49275362318841" y="124.21875"/>
+            <point key="canvasLocation" x="200.00000000000003" y="117.85714285714285"/>
         </tableViewCell>
     </objects>
 </document>

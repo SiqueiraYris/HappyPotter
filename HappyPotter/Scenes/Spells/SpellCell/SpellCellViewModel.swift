@@ -8,16 +8,27 @@
 
 import Foundation
 
+// MARK: - SpellCellViewModelProtocol
 protocol SpellCellViewModelProtocol {
-    var spell: Spell { get }
+    func getSpellName() -> String
+    func getSpellType() -> String
 }
 
 final class SpellCellViewModel: SpellCellViewModelProtocol {
     // MARK: - Attributes
-    var spell: Spell
+    private var spell: Spell
 
     // MARK: - Initializer
     init(spell: Spell) {
         self.spell = spell
+    }
+
+    // MARK: - Functions
+    func getSpellName() -> String {
+        spell.spell
+    }
+
+    func getSpellType() -> String {
+        "Type: \(spell.type)"
     }
 }

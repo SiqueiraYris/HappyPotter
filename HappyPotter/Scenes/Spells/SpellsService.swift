@@ -8,8 +8,10 @@
 
 import Foundation
 
+// MARK: - Typealias
 typealias FetchSpellsResult = (Result<[Spell], ErrorHandler>) -> Void
 
+// MARK: - SpellsServiceProtocol
 protocol SpellsServiceProtocol: AnyObject {
     func fetchSpells(_ route: SpellsRoute, completion: @escaping FetchSpellsResult)
 }

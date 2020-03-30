@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - SpellsViewModelProtocol
 protocol SpellsViewModelProtocol {
     var spellCells: Dynamic<[SpellCellViewModelProtocol]> { get }
 
@@ -28,6 +29,7 @@ final class SpellsViewModel: SpellsViewModelProtocol {
         self.service = service
     }
 
+    // MARK: - Functions
     func fetchSpells() {
         let route = SpellsRoute.fetchSpells
         
@@ -36,13 +38,12 @@ final class SpellsViewModel: SpellsViewModelProtocol {
 
             switch result {
             case .success(let dataSource):
-                print("dataSource spells \(dataSource)")
-                
                 let cellViewModel = dataSource.compactMap {
                     SpellCellViewModel(spell: $0)
                 }
                 self.spellCells.value = cellViewModel
-            case .failure(let error) :
+
+            case .failure(let error):
                 print("error \(error)")
             }
         }

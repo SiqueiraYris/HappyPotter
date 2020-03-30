@@ -8,8 +8,10 @@
 
 import Foundation
 
+// MARK: - Typealias
 typealias FetchHousesResult = (Result<[House], ErrorHandler>) -> Void
 
+// MARK: - HousesServiceProtocol
 protocol HousesServiceProtocol: AnyObject {
     func fetchHouses(_ route: HousesRoute, completion: @escaping FetchHousesResult)
 }

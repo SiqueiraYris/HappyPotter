@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpellsViewController" customModule="HappyPotter" customModuleProvider="target">
             <connections>
+                <outlet property="spellsTableView" destination="dbn-L8-PVZ" id="0nG-xm-hAC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +17,22 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbn-L8-PVZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dbn-L8-PVZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1LP-df-exX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dbn-L8-PVZ" secondAttribute="trailing" id="6eR-5x-YGu"/>
+                <constraint firstItem="dbn-L8-PVZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GmR-lt-SnC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dbn-L8-PVZ" secondAttribute="bottom" id="sGl-rf-3Mh"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="123"/>
+            <point key="canvasLocation" x="133" y="101"/>
         </view>
     </objects>
 </document>
