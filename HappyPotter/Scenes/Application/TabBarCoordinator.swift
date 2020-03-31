@@ -28,16 +28,15 @@ final class TabBarCoordinator: Coordinator {
 
     // MARK: - Life Cycle
     func start() {
-        // TODO: change images/images selected
-        let housesTabBarItem = UITabBarItem(title: String.localized(by: "Houses"), image: UIImage.remove, selectedImage: UIImage.remove)
+        let housesTabBarItem = UITabBarItem(title: String.localized(by: "Houses"), image: UIImage(named: "houses"), selectedImage: UIImage(named: "houses"))
         housesCoordinator.rootViewController.tabBarItem = housesTabBarItem
         housesCoordinator.start()
 
-        let charactersTabBarItem = UITabBarItem(title: String.localized(by: "Characters"), image: UIImage.remove, selectedImage: UIImage.remove)
+        let charactersTabBarItem = UITabBarItem(title: String.localized(by: "Characters"), image: UIImage(named: "characters"), selectedImage: UIImage(named: "characters"))
         charactersCoordinator.rootViewController.tabBarItem = charactersTabBarItem
         charactersCoordinator.start()
 
-        let spellsTabBarItem = UITabBarItem(title: String.localized(by: "Spells"), image: UIImage.remove, selectedImage: UIImage.remove)
+        let spellsTabBarItem = UITabBarItem(title: String.localized(by: "Spells"), image: UIImage(named: "spells"), selectedImage: UIImage(named: "spells"))
         spellsCoordinator.rootViewController.tabBarItem = spellsTabBarItem
         spellsCoordinator.start()
     
