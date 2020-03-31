@@ -56,6 +56,8 @@
 		4DCEA48B241689A1002F1184 /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */; };
 		4DCEA48F2416A83F002F1184 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48E2416A83F002F1184 /* NetworkError.swift */; };
 		4DEAF4F12433A5820070F015 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAF4F02433A5820070F015 /* String+Localization.swift */; };
+		4DEAF4F32433A6080070F015 /* ConfigurationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAF4F22433A6080070F015 /* ConfigurationConstants.swift */; };
+		4DEAF4F72433ABAE0070F015 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAF4F62433ABAE0070F015 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
 		4DCEA48E2416A83F002F1184 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4DEAF4F02433A5820070F015 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		4DEAF4F22433A6080070F015 /* ConfigurationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationConstants.swift; sourceTree = "<group>"; };
+		4DEAF4F62433ABAE0070F015 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 		4D6721E22417E7650000B0B8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4DEAF4F22433A6080070F015 /* ConfigurationConstants.swift */,
 				4D6721E32417E7720000B0B8 /* Dynamic.swift */,
 				4D6721E72417FFAD0000B0B8 /* ViewConfiguration.swift */,
 			);
@@ -265,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA79B07241455840021B4A9 /* Assets.xcassets */,
+				4DEAF4F62433ABAE0070F015 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				4D23267E24327E2B00FAE035 /* SpellTableViewCell.xib in Resources */,
 				4D2326932432957900FAE035 /* CharacterTableViewCell.xib in Resources */,
 				4D23268324327FE200FAE035 /* HouseTableViewCell.xib in Resources */,
+				4DEAF4F72433ABAE0070F015 /* Localizable.strings in Resources */,
 				4DA79B0B241455840021B4A9 /* LaunchScreen.storyboard in Resources */,
 				4DA79B08241455840021B4A9 /* Assets.xcassets in Resources */,
 				4DB449182414578F00C95A0E /* HousesViewController.xib in Resources */,
@@ -527,6 +534,7 @@
 				4DCEA48024167630002F1184 /* HousesRoute.swift in Sources */,
 				4DB4491A2414578F00C95A0E /* HousesViewModel.swift in Sources */,
 				4D2326902432925200FAE035 /* CharacterCellViewModel.swift in Sources */,
+				4DEAF4F32433A6080070F015 /* ConfigurationConstants.swift in Sources */,
 				4D23267D24327E2B00FAE035 /* SpellTableViewCell.swift in Sources */,
 				4DB4492B2414593D00C95A0E /* House.swift in Sources */,
 				4D6721E12417E5BB0000B0B8 /* SpellCellViewModel.swift in Sources */,

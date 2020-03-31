@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - HousesViewModelProtocol
 protocol HousesViewModelProtocol {
     var houses: [House] { get }
     var houseCells: Dynamic<[HouseCellViewModelProtocol]> { get }
@@ -43,7 +44,6 @@ final class HousesViewModel: HousesViewModelProtocol {
                     HouseCellViewModel(with: $0)
                 }
                 self.houseCells.value = cellViewModel
-                print("dataSource \(dataSource)")
 
             case .failure(let error) :
                 print("error \(error)")

@@ -29,6 +29,6 @@ final class HouseCellViewModel: HouseCellViewModelProtocol {
     }
 
     func getHouseHead() -> String {
-        "Head: \(house.headOfHouse)"
+        String.localizedComplement(by: "HeadOfHouse", with: house.headOfHouse)
     }
 }

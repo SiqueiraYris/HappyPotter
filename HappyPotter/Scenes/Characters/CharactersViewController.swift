@@ -42,7 +42,7 @@ final class CharactersViewController: UIViewController {
 
     // MARK: - Functions
     private func setupUI() {
-        navigationItem.title = "Characters"
+        navigationItem.title = String.localized(by: "Characters")
     }
 
     private func setupBinds() {
@@ -60,7 +60,6 @@ final class CharactersViewController: UIViewController {
         charactersTableView.dataSource = self
         charactersTableView.delegate = self
     }
-
 }
 
 // MARK: - UITableViewDataSource

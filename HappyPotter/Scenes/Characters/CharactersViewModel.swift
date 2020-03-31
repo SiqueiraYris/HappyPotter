@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - CharactersViewModelProtocol
 protocol CharactersViewModelProtocol {
     var characterCells: Dynamic<[CharacterCellViewModelProtocol]> { get }
 
@@ -37,7 +38,6 @@ final class CharactersViewModel: CharactersViewModelProtocol {
 
             switch result {
             case .success(let dataSource):
-                print("dataSource \(dataSource)")
                 let cellViewModel = dataSource.compactMap  {
                     CharacterCellViewModel(with: $0)
                 }

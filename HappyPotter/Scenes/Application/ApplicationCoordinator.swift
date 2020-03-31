@@ -9,7 +9,6 @@
 import UIKit
 
 final class ApplicationCoordinator: Coordinator {
-
     // MARK: - Attributes
     private static var window: UIWindow? = {
         let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
@@ -27,5 +26,4 @@ final class ApplicationCoordinator: Coordinator {
         let tabBarCoordinator = TabBarCoordinator(in: window)
         tabBarCoordinator.start()
     }
-
 }

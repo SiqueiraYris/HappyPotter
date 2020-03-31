@@ -56,5 +56,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Configurations</key>
+	<dict>
+		<key>host</key>
+		<string>www.potterapi.com</string>
+		<key>scheme</key>
+		<string>https</string>
+		<key>apiKey</key>
+		<string>$2a$10$4wdUeI4lDPjfwnheDRW8FuBp18oDJIjPCmzBotNrzCwfZG1t3JHp6</string>
+		<key>housesPath</key>
+		<string>/v1/houses</string>
+		<key>charactersPath</key>
+		<string>/v1/characters</string>
+		<key>spellsPath</key>
+		<string>/v1/spells</string>
+	</dict>
 </dict>
 </plist>

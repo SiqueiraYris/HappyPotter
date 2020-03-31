@@ -9,7 +9,6 @@
 import UIKit
 
 final class TabBarCoordinator: Coordinator {
-
     // MARK: - Attributes
     private let tabBarController: UITabBarController
     private var housesCoordinator: HousesCoordinator
@@ -29,16 +28,16 @@ final class TabBarCoordinator: Coordinator {
 
     // MARK: - Life Cycle
     func start() {
-        // TODO: change images/images selected, localizable texts
-        let housesTabBarItem = UITabBarItem(title: "Houses", image: UIImage.remove, selectedImage: UIImage.remove)
+        // TODO: change images/images selected
+        let housesTabBarItem = UITabBarItem(title: String.localized(by: "Houses"), image: UIImage.remove, selectedImage: UIImage.remove)
         housesCoordinator.rootViewController.tabBarItem = housesTabBarItem
         housesCoordinator.start()
 
-        let charactersTabBarItem = UITabBarItem(title: "Characters", image: UIImage.remove, selectedImage: UIImage.remove)
+        let charactersTabBarItem = UITabBarItem(title: String.localized(by: "Characters"), image: UIImage.remove, selectedImage: UIImage.remove)
         charactersCoordinator.rootViewController.tabBarItem = charactersTabBarItem
         charactersCoordinator.start()
 
-        let spellsTabBarItem = UITabBarItem(title: "Spells", image: UIImage.remove, selectedImage: UIImage.remove)
+        let spellsTabBarItem = UITabBarItem(title: String.localized(by: "Spells"), image: UIImage.remove, selectedImage: UIImage.remove)
         spellsCoordinator.rootViewController.tabBarItem = spellsTabBarItem
         spellsCoordinator.start()
     
@@ -48,5 +47,4 @@ final class TabBarCoordinator: Coordinator {
                                             animated: true)
         window.rootViewController = tabBarController
     }
-
 }

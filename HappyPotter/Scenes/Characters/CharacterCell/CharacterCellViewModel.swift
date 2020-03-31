@@ -31,15 +31,15 @@ final class CharacterCellViewModel: CharacterCellViewModelProtocol {
 
     func getCharacterRole() -> String {
         if let role = character.role {
-            return "Role: \(role)"
+            return String.localizedComplement(by: "CharacterRole", with: role)
         }
-        return "Role: None"
+        return String.localizedComplement(by: "CharacterRole", with: String.localized(by: "None"))
     }
 
     func getCharacterHouse() -> String {
         if let house = character.house {
-            return "House: \(house)"
+            return String.localizedComplement(by: "CharacterHouse", with: house)
         }
-        return "House: None"
+        return String.localizedComplement(by: "CharacterHouse", with: String.localized(by: "None"))
     }
 }

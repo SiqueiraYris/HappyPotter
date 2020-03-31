@@ -25,7 +25,7 @@ final class NetworkManager {
 
     private func createUrlRequest(with config: RequestConfiguration) -> URLRequest? {
         var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
+        urlComponents.scheme = uriScheme
         urlComponents.host = config.host
         urlComponents.path = config.path
 

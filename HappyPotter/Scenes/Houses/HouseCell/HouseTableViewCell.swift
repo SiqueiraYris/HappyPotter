@@ -10,8 +10,8 @@ import UIKit
 
 final class HouseTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
-    @IBOutlet weak var houseName: UILabel!
-    @IBOutlet weak var houseHead: UILabel!
+    @IBOutlet private weak var houseName: UILabel!
+    @IBOutlet private weak var houseHead: UILabel!
 
     // MARK: - Attributes
     static let identifier = "HouseTableViewCell"

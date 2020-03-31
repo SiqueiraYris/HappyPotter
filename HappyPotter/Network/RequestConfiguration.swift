@@ -18,8 +18,7 @@ struct RequestConfiguration {
     var parametersEncoding: ParameterEncoding
 
     // MARK: - Initializer
-    //TODO: get default value from plist
-    init(host: String = "www.potterapi.com",
+    init(host: String = serverHost,
          path: String,
          method: HTTPMethod = .get,
          encoding: ParameterEncoding = .url,

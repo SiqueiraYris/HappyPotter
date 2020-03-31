@@ -41,7 +41,7 @@ final class SpellsViewController: UIViewController {
 
     // MARK: - Functions
     private func setupUI() {
-        navigationItem.title = "Spells"
+        navigationItem.title = String.localized(by: "Spells")
     }
 
     private func setupBinds() {

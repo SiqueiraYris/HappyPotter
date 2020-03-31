@@ -29,6 +29,6 @@ final class SpellCellViewModel: SpellCellViewModelProtocol {
     }
 
     func getSpellType() -> String {
-        "Type: \(spell.type)"
+        String.localizedComplement(by: "SpellType", with: spell.type)
     }
 }

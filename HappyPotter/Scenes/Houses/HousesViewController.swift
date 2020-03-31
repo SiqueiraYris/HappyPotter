@@ -26,7 +26,8 @@ final class HousesViewController: UIViewController {
         super.init(nibName: String(describing: HousesViewController.self), bundle: .main)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -42,7 +43,7 @@ final class HousesViewController: UIViewController {
 
     // MARK: - Functions
     private func setupUI() {
-        navigationItem.title = "Houses"
+        navigationItem.title = String.localized(by: "Houses")
     }
 
     private func setupBinds() {
