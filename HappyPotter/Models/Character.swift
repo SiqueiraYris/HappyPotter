@@ -8,11 +8,11 @@
 
 import Foundation
 
+// MARK: - Character
 struct Character: Decodable {
-
     // MARK: - Attributes
-    let id, name, role, house: String
-    let school: String
+    let id, name: String
+    let role, house, school: String?
     let ministryOfMagic, orderOfThePhoenix, dumbledoresArmy, deathEater: Bool
     let bloodStatus, species: String
 
@@ -22,5 +22,4 @@ struct Character: Decodable {
         case name, role, house, school
         case ministryOfMagic, orderOfThePhoenix, dumbledoresArmy, deathEater, bloodStatus, species
     }
-
 }

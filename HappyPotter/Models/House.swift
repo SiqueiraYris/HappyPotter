@@ -8,8 +8,8 @@
 
 import Foundation
 
+// MARK: - House
 struct House: Codable {
-
     // MARK: - Attributes
     let id, name, mascot, headOfHouse: String
     let houseGhost, founder: String
@@ -22,5 +22,4 @@ struct House: Codable {
         case name, mascot, headOfHouse, houseGhost, founder
         case school, members, values, colors
     }
-
 }

@@ -8,8 +8,8 @@
 
 import Foundation
 
+// MARK: - Spell
 struct Spell: Codable {
-
     // MARK: - Attributes
     let id, spell, type, effect: String
 
@@ -18,5 +18,4 @@ struct Spell: Codable {
         case id = "_id"
         case spell, type, effect
     }
-
 }

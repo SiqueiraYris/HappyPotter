@@ -14,6 +14,11 @@
 		4D23268224327FE200FAE035 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D23268024327FE200FAE035 /* HouseTableViewCell.swift */; };
 		4D23268324327FE200FAE035 /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D23268124327FE200FAE035 /* HouseTableViewCell.xib */; };
 		4D2326852432800D00FAE035 /* HouseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2326842432800D00FAE035 /* HouseCellViewModel.swift */; };
+		4D232687243290D800FAE035 /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D232686243290D800FAE035 /* CharactersService.swift */; };
+		4D2326892432915C00FAE035 /* CharactersRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2326882432915C00FAE035 /* CharactersRoute.swift */; };
+		4D2326902432925200FAE035 /* CharacterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D23268F2432925200FAE035 /* CharacterCellViewModel.swift */; };
+		4D2326932432957900FAE035 /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2326912432957800FAE035 /* CharacterTableViewCell.xib */; };
+		4D2326942432957900FAE035 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2326922432957900FAE035 /* CharacterTableViewCell.swift */; };
 		4D6721D62417DFAF0000B0B8 /* SpellsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721D52417DFAF0000B0B8 /* SpellsRoute.swift */; };
 		4D6721D82417DFF30000B0B8 /* SpellsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721D72417DFF30000B0B8 /* SpellsService.swift */; };
 		4D6721E12417E5BB0000B0B8 /* SpellCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6721E02417E5BB0000B0B8 /* SpellCellViewModel.swift */; };
@@ -50,6 +55,7 @@
 		4DCEA48924167AD6002F1184 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48824167AD6002F1184 /* Data+Extension.swift */; };
 		4DCEA48B241689A1002F1184 /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */; };
 		4DCEA48F2416A83F002F1184 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEA48E2416A83F002F1184 /* NetworkError.swift */; };
+		4DEAF4F12433A5820070F015 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAF4F02433A5820070F015 /* String+Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,11 @@
 		4D23268024327FE200FAE035 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
 		4D23268124327FE200FAE035 /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
 		4D2326842432800D00FAE035 /* HouseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCellViewModel.swift; sourceTree = "<group>"; };
+		4D232686243290D800FAE035 /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
+		4D2326882432915C00FAE035 /* CharactersRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRoute.swift; sourceTree = "<group>"; };
+		4D23268F2432925200FAE035 /* CharacterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellViewModel.swift; sourceTree = "<group>"; };
+		4D2326912432957800FAE035 /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
+		4D2326922432957900FAE035 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		4D6721D52417DFAF0000B0B8 /* SpellsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsRoute.swift; sourceTree = "<group>"; };
 		4D6721D72417DFF30000B0B8 /* SpellsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsService.swift; sourceTree = "<group>"; };
 		4D6721E02417E5BB0000B0B8 /* SpellCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCellViewModel.swift; sourceTree = "<group>"; };
@@ -119,6 +130,7 @@
 		4DCEA48824167AD6002F1184 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
 		4DCEA48E2416A83F002F1184 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4DEAF4F02433A5820070F015 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +166,16 @@
 				4D23268124327FE200FAE035 /* HouseTableViewCell.xib */,
 			);
 			path = HouseCell;
+			sourceTree = "<group>";
+		};
+		4D23268A2432921800FAE035 /* CharacterCell */ = {
+			isa = PBXGroup;
+			children = (
+				4D23268F2432925200FAE035 /* CharacterCellViewModel.swift */,
+				4D2326922432957900FAE035 /* CharacterTableViewCell.swift */,
+				4D2326912432957800FAE035 /* CharacterTableViewCell.xib */,
+			);
+			path = CharacterCell;
 			sourceTree = "<group>";
 		};
 		4D6721D92417E4460000B0B8 /* SpellCell */ = {
@@ -296,7 +318,9 @@
 		4DB449132414578F00C95A0E /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				4D23268A2432921800FAE035 /* CharacterCell */,
 				4DB449152414578F00C95A0E /* CharactersCoordinator.swift */,
+				4D232686243290D800FAE035 /* CharactersService.swift */,
 				4DB449172414578F00C95A0E /* CharactersViewController.swift */,
 				4DB449162414578F00C95A0E /* CharactersViewController.xib */,
 				4DB449142414578F00C95A0E /* CharactersViewModel.swift */,
@@ -330,6 +354,7 @@
 		4DCEA47C24167607002F1184 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				4D2326882432915C00FAE035 /* CharactersRoute.swift */,
 				4DCEA47F24167630002F1184 /* HousesRoute.swift */,
 				4D6721D52417DFAF0000B0B8 /* SpellsRoute.swift */,
 			);
@@ -340,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				4DCEA48824167AD6002F1184 /* Data+Extension.swift */,
+				4DEAF4F02433A5820070F015 /* String+Localization.swift */,
 				4DCEA48A241689A1002F1184 /* URLComponents+Extension.swift */,
 			);
 			path = Extensions;
@@ -452,6 +478,7 @@
 				4DB449242414578F00C95A0E /* CharactersViewController.xib in Resources */,
 				4D23267A2432751A00FAE035 /* SpellsViewController.xib in Resources */,
 				4D23267E24327E2B00FAE035 /* SpellTableViewCell.xib in Resources */,
+				4D2326932432957900FAE035 /* CharacterTableViewCell.xib in Resources */,
 				4D23268324327FE200FAE035 /* HouseTableViewCell.xib in Resources */,
 				4DA79B0B241455840021B4A9 /* LaunchScreen.storyboard in Resources */,
 				4DA79B08241455840021B4A9 /* Assets.xcassets in Resources */,
@@ -494,20 +521,25 @@
 				4DB449222414578F00C95A0E /* CharactersViewModel.swift in Sources */,
 				4DB449232414578F00C95A0E /* CharactersCoordinator.swift in Sources */,
 				4DA79B31241456870021B4A9 /* Coordinator.swift in Sources */,
+				4D232687243290D800FAE035 /* CharactersService.swift in Sources */,
 				4DCEA47E24167622002F1184 /* NetworkRoute.swift in Sources */,
 				4DB449252414578F00C95A0E /* CharactersViewController.swift in Sources */,
 				4DCEA48024167630002F1184 /* HousesRoute.swift in Sources */,
 				4DB4491A2414578F00C95A0E /* HousesViewModel.swift in Sources */,
+				4D2326902432925200FAE035 /* CharacterCellViewModel.swift in Sources */,
 				4D23267D24327E2B00FAE035 /* SpellTableViewCell.swift in Sources */,
 				4DB4492B2414593D00C95A0E /* House.swift in Sources */,
 				4D6721E12417E5BB0000B0B8 /* SpellCellViewModel.swift in Sources */,
 				4D6721E82417FFAD0000B0B8 /* ViewConfiguration.swift in Sources */,
+				4D2326892432915C00FAE035 /* CharactersRoute.swift in Sources */,
 				4D6721D82417DFF30000B0B8 /* SpellsService.swift in Sources */,
 				4DB4492F241460BE00C95A0E /* RequestConfiguration.swift in Sources */,
+				4DEAF4F12433A5820070F015 /* String+Localization.swift in Sources */,
 				4DCEA48924167AD6002F1184 /* Data+Extension.swift in Sources */,
 				4DA79AFF241455800021B4A9 /* AppDelegate.swift in Sources */,
 				4DB4492C2414593D00C95A0E /* Spell.swift in Sources */,
 				4DB4492A2414593D00C95A0E /* Character.swift in Sources */,
+				4D2326942432957900FAE035 /* CharacterTableViewCell.swift in Sources */,
 				4DCEA4822416786A002F1184 /* HousesService.swift in Sources */,
 				4DCEA48F2416A83F002F1184 /* NetworkError.swift in Sources */,
 				4DA79B01241455800021B4A9 /* SceneDelegate.swift in Sources */,
